@@ -1,0 +1,43 @@
+name: Build and Test
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@6fb02220983dee41ce7ae257b6f4d8f9bf5ed4ce # v2
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@323ab0502cd38fdc493335025a96c8fdb0edc71f # v2.0.1
+
+    - name: Restore NuGet packages
+      run: nuget restore FlightNode.Api.sln
+
+    - name: Build solution
+      run: msbuild FlightNode.Api.sln /p:Configuration=Debug /m
+
+    - name: Setup xUnit
+      run: |
+        mkdir -p packages/xunit.runner.console
+        nuget install xunit.runner.console -Version 2.1.0 -OutputDirectory packages
+
+    - name: Run unit tests
+      run: |
+        $xunit = "packages/xunit.runner.console.2.1.0/tools/xunit.console.exe"
+        $common = "FlightNode.Common.UnitTests"
+        $dc = "FlightNode.DataCollection.UnitTests"
+        $identity = "FlightNode.Identity.UnitTests"
+        $api = "FlightNode.Common.Api.UnitTests"
+
+        & $xunit "test/$common/bin/Debug/$common.dll"
+        & $xunit "test/$dc/bin/Debug/FlightNode.DataCollection.Domain.UnitTests.dll"
+        & $xunit "test/$identity/bin/Debug/$identity.dll"
+        & $xunit "test/$api/bin/Debug/FligthNote.Common.Api.UnitTests.dll"

@@ -16,9 +16,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{27C6DFF2-DB5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{14BDBFED-DEB7-49FF-A7E6-A18709546A2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.Service", "Service\src\FlightNode.Service.csproj", "{B2C3A4FC-1E43-446E-A30E-67F68CF9F416}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.Service", "src\FlightNode.Service\FlightNode.Service.csproj", "{B2C3A4FC-1E43-446E-A30E-67F68CF9F416}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.Service.Tests", "Service\test\FlightNode.Service.Tests.csproj", "{6AECD297-1A6D-4C0F-A2D9-E4501B34F95A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.SelfHost", "src\FlightNode.SelfHost\FlightNode.SelfHost.csproj", "{9F2F31EE-6017-48CC-88E6-EC4FF4FEAAA5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D8FA5A9A-0619-4CED-B061-32C725B6E0CC}"
 EndProject
@@ -36,13 +36,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_extra", "_extra", "{73A68C
 		Common\README.md = Common\README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.Common.Api", "Common\src\FlightNode.Api\FlightNode.Common.Api.csproj", "{35293658-9D86-44CC-BBE2-8674053633AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.Common.Api", "src\FlightNode.Api\FlightNode.Common.Api.csproj", "{35293658-9D86-44CC-BBE2-8674053633AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.Common", "Common\src\FlightNode.Common\FlightNode.Common.csproj", "{05902C28-0900-4902-9300-0540EEDAC9C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.Common", "src\FlightNode.Common\FlightNode.Common.csproj", "{05902C28-0900-4902-9300-0540EEDAC9C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.Common.UnitTests", "Common\test\FlightNode.Common.UnitTests\FlightNode.Common.UnitTests.csproj", "{986E3868-2878-4CF8-AFA1-1CED803EA044}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.Common.UnitTests", "test\FlightNode.Common.UnitTests\FlightNode.Common.UnitTests.csproj", "{986E3868-2878-4CF8-AFA1-1CED803EA044}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FligthNote.Common.Api.UnitTests", "Common\test\FligthNote.Common.Api.UnitTests\FligthNote.Common.Api.UnitTests.csproj", "{3715E7D9-92E0-4C85-889F-85D81E357BD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.Common.Api.UnitTests", "test\FlightNode.Common.Api.UnitTests\FlightNode.Common.Api.UnitTests.csproj", "{3715E7D9-92E0-4C85-889F-85D81E357BD8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataCollection", "DataCollection", "{94C10F5D-AEBE-4B6B-8CE7-835D118FE212}"
 EndProject
@@ -55,9 +55,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BD3EEB3C-43D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FD3AB575-4A81-44D7-9C56-CED639AE9497}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.DataCollection", "DataCollection\src\FlightNode.DataCollection.csproj", "{060BF052-8FA5-4BEB-95AE-A4DA69BC7C54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.DataCollection", "src\FlightNode.DataCollection\FlightNode.DataCollection.csproj", "{060BF052-8FA5-4BEB-95AE-A4DA69BC7C54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.DataCollection.UnitTests", "DataCollection\test\FlightNode.DataCollection.UnitTests.csproj", "{A507F681-C111-447A-BC1F-195916891226}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.DataCollection.UnitTests", "test\FlightNode.DataCollection.UnitTests\FlightNode.DataCollection.UnitTests.csproj", "{A507F681-C111-447A-BC1F-195916891226}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{73FF45C2-3D97-4C93-A9AE-61F5E01D4A05}"
 EndProject
@@ -70,9 +70,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6A2F8EA7-11E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{063FA8EC-64B6-488A-BF67-D8914F7004F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.Identity", "Identity\src\FlightNode.Identity.csproj", "{8EFA7367-E1A8-4CA3-8F20-91CE6FE38F7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.Identity", "src\FlightNode.Identity\FlightNode.Identity.csproj", "{8EFA7367-E1A8-4CA3-8F20-91CE6FE38F7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.Identity.UnitTests", "Identity\test\FlightNode.Identity.UnitTests.csproj", "{5A07349D-6883-475C-93C9-10CE6D0EB3BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightNode.Identity.UnitTests", "test\FlightNode.Identity.UnitTests\FlightNode.Identity.UnitTests.csproj", "{5A07349D-6883-475C-93C9-10CE6D0EB3BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,12 +87,6 @@ Global
 		{B2C3A4FC-1E43-446E-A30E-67F68CF9F416}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B2C3A4FC-1E43-446E-A30E-67F68CF9F416}.TernProd|Any CPU.ActiveCfg = TernProd|Any CPU
 		{B2C3A4FC-1E43-446E-A30E-67F68CF9F416}.TernProd|Any CPU.Build.0 = TernProd|Any CPU
-		{6AECD297-1A6D-4C0F-A2D9-E4501B34F95A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6AECD297-1A6D-4C0F-A2D9-E4501B34F95A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6AECD297-1A6D-4C0F-A2D9-E4501B34F95A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6AECD297-1A6D-4C0F-A2D9-E4501B34F95A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6AECD297-1A6D-4C0F-A2D9-E4501B34F95A}.TernProd|Any CPU.ActiveCfg = TernProd|Any CPU
-		{6AECD297-1A6D-4C0F-A2D9-E4501B34F95A}.TernProd|Any CPU.Build.0 = TernProd|Any CPU
 		{35293658-9D86-44CC-BBE2-8674053633AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{35293658-9D86-44CC-BBE2-8674053633AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35293658-9D86-44CC-BBE2-8674053633AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -141,6 +135,10 @@ Global
 		{5A07349D-6883-475C-93C9-10CE6D0EB3BC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5A07349D-6883-475C-93C9-10CE6D0EB3BC}.TernProd|Any CPU.ActiveCfg = TernProd|Any CPU
 		{5A07349D-6883-475C-93C9-10CE6D0EB3BC}.TernProd|Any CPU.Build.0 = TernProd|Any CPU
+        {9F2F31EE-6017-48CC-88E6-EC4FF4FEAAA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F2F31EE-6017-48CC-88E6-EC4FF4FEAAA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F2F31EE-6017-48CC-88E6-EC4FF4FEAAA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F2F31EE-6017-48CC-88E6-EC4FF4FEAAA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -149,7 +147,6 @@ Global
 		{27C6DFF2-DB52-43BC-8CCD-789D650280BD} = {C134EB33-EE28-48B2-B1DB-5F6D3F12171E}
 		{14BDBFED-DEB7-49FF-A7E6-A18709546A2B} = {C134EB33-EE28-48B2-B1DB-5F6D3F12171E}
 		{B2C3A4FC-1E43-446E-A30E-67F68CF9F416} = {27C6DFF2-DB52-43BC-8CCD-789D650280BD}
-		{6AECD297-1A6D-4C0F-A2D9-E4501B34F95A} = {14BDBFED-DEB7-49FF-A7E6-A18709546A2B}
 		{97D74E2D-E65C-49C6-9278-EB4B19515968} = {C134EB33-EE28-48B2-B1DB-5F6D3F12171E}
 		{7397E8E3-9070-4449-880E-90DFF14C3DDF} = {D8FA5A9A-0619-4CED-B061-32C725B6E0CC}
 		{EE76ED5B-D004-4E05-84FD-7D72ADB01F7B} = {D8FA5A9A-0619-4CED-B061-32C725B6E0CC}
